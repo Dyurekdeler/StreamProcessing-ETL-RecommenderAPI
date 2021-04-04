@@ -20,18 +20,18 @@ import java.util.Properties;
 import java.util.concurrent.CountDownLatch;
 import java.util.logging.Level;
 
-public class ProductViewsConsumer {
+public class ProductViewConsumer {
 
 
     public static void main(String[] args){
-        new ProductViewsConsumer().run();
+        new ProductViewConsumer().run();
     }
 
-    private ProductViewsConsumer(){}
+    private ProductViewConsumer(){}
 
     private void run(){
 
-        Logger logger = LoggerFactory.getLogger(ProductViewsConsumer.class);
+        Logger logger = LoggerFactory.getLogger(ProductViewConsumer.class);
 
         String bootstrapServers = "127.0.0.1:9092";
         String groupId = "kafka-stream-processing";
@@ -113,7 +113,7 @@ public class ProductViewsConsumer {
 
         } catch (SQLException ex) {
 
-            java.util.logging.Logger lgr = java.util.logging.Logger.getLogger(ProductViewsConsumer.class.getName());
+            java.util.logging.Logger lgr = java.util.logging.Logger.getLogger(ProductViewConsumer.class.getName());
             lgr.log(Level.SEVERE, ex.getMessage(), ex);
         }
     }
@@ -122,7 +122,7 @@ public class ProductViewsConsumer {
 
         private CountDownLatch latch;
         private KafkaConsumer<String, String> consumer;
-        private Logger logger = LoggerFactory.getLogger(ProductViewsConsumer.class);
+        private Logger logger = LoggerFactory.getLogger(ProductViewConsumer.class);
 
         public ConsumerRunnable(CountDownLatch latch, String bootstrapServers, String groupId, String topic){
             this.latch = latch;
