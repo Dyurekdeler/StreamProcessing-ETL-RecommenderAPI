@@ -1,0 +1,43 @@
+
+   
+CREATE TABLE public.product_view_history
+(
+    event character varying(15) COLLATE pg_catalog."default" NOT NULL,
+    message_id character varying(120) COLLATE pg_catalog."default" NOT NULL,
+    user_id character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    product_id character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    source character varying(15) COLLATE pg_catalog."default" NOT NULL,
+    click_timestamp timestamp(0) without time zone NOT NULL,
+    CONSTRAINT id PRIMARY KEY (message_id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.product_view_history
+    OWNER to postgres;
+    
+
+CREATE TABLE public.bestseller_product
+(
+    product_id text COLLATE pg_catalog."default",
+    category_id text COLLATE pg_catalog."default",
+    sale_amount bigint NOT NULL
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.bestseller_product
+    OWNER to postgres;
+    
+    
+CREATE TABLE public.products
+(
+    product_id character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    category_id character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT products_pkey PRIMARY KEY (product_id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.products
+    OWNER to postgres;

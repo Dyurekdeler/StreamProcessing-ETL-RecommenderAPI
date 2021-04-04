@@ -1,0 +1,240 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 13.1 (Debian 13.1-1.pgdg100+1)
+-- Dumped by pg_dump version 13.2 (Ubuntu 13.2-1.pgdg20.04+1)
+
+-- Started on 2021-04-04 15:18:42 +03
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 2938 (class 0 OID 24583)
+-- Dependencies: 201
+-- Data for Name: bestseller_product; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.bestseller_product VALUES ('product-172', 'category-11', 55);
+INSERT INTO public.bestseller_product VALUES ('product-57', 'category-11', 48);
+INSERT INTO public.bestseller_product VALUES ('product-149', 'category-11', 45);
+INSERT INTO public.bestseller_product VALUES ('product-123', 'category-11', 37);
+INSERT INTO public.bestseller_product VALUES ('product-102', 'category-11', 37);
+INSERT INTO public.bestseller_product VALUES ('product-549', 'category-11', 26);
+INSERT INTO public.bestseller_product VALUES ('product-391', 'category-11', 25);
+INSERT INTO public.bestseller_product VALUES ('product-291', 'category-11', 25);
+INSERT INTO public.bestseller_product VALUES ('product-582', 'category-11', 22);
+INSERT INTO public.bestseller_product VALUES ('product-563', 'category-11', 21);
+INSERT INTO public.bestseller_product VALUES ('product-412', 'category-11', 21);
+INSERT INTO public.bestseller_product VALUES ('product-168', 'category-9', 60);
+INSERT INTO public.bestseller_product VALUES ('product-119', 'category-9', 53);
+INSERT INTO public.bestseller_product VALUES ('product-46', 'category-9', 51);
+INSERT INTO public.bestseller_product VALUES ('product-79', 'category-9', 49);
+INSERT INTO public.bestseller_product VALUES ('product-41', 'category-9', 49);
+INSERT INTO public.bestseller_product VALUES ('product-187', 'category-9', 48);
+INSERT INTO public.bestseller_product VALUES ('product-63', 'category-9', 46);
+INSERT INTO public.bestseller_product VALUES ('product-13', 'category-9', 45);
+INSERT INTO public.bestseller_product VALUES ('product-197', 'category-9', 43);
+INSERT INTO public.bestseller_product VALUES ('product-349', 'category-9', 32);
+INSERT INTO public.bestseller_product VALUES ('product-307', 'category-9', 32);
+INSERT INTO public.bestseller_product VALUES ('product-158', 'category-1', 59);
+INSERT INTO public.bestseller_product VALUES ('product-45', 'category-1', 58);
+INSERT INTO public.bestseller_product VALUES ('product-72', 'category-1', 54);
+INSERT INTO public.bestseller_product VALUES ('product-35', 'category-1', 54);
+INSERT INTO public.bestseller_product VALUES ('product-30', 'category-1', 53);
+INSERT INTO public.bestseller_product VALUES ('product-22', 'category-1', 51);
+INSERT INTO public.bestseller_product VALUES ('product-152', 'category-1', 50);
+INSERT INTO public.bestseller_product VALUES ('product-195', 'category-1', 49);
+INSERT INTO public.bestseller_product VALUES ('product-196', 'category-1', 49);
+INSERT INTO public.bestseller_product VALUES ('product-5', 'category-1', 49);
+INSERT INTO public.bestseller_product VALUES ('product-190', 'category-3', 57);
+INSERT INTO public.bestseller_product VALUES ('product-147', 'category-3', 56);
+INSERT INTO public.bestseller_product VALUES ('product-8', 'category-3', 54);
+INSERT INTO public.bestseller_product VALUES ('product-148', 'category-3', 54);
+INSERT INTO public.bestseller_product VALUES ('product-105', 'category-3', 54);
+INSERT INTO public.bestseller_product VALUES ('product-96', 'category-8', 56);
+INSERT INTO public.bestseller_product VALUES ('product-175', 'category-3', 53);
+INSERT INTO public.bestseller_product VALUES ('product-74', 'category-3', 52);
+INSERT INTO public.bestseller_product VALUES ('product-140', 'category-3', 49);
+INSERT INTO public.bestseller_product VALUES ('product-92', 'category-3', 48);
+INSERT INTO public.bestseller_product VALUES ('product-186', 'category-8', 54);
+INSERT INTO public.bestseller_product VALUES ('product-53', 'category-3', 48);
+INSERT INTO public.bestseller_product VALUES ('product-176', 'category-8', 54);
+INSERT INTO public.bestseller_product VALUES ('product-64', 'category-8', 51);
+INSERT INTO public.bestseller_product VALUES ('product-58', 'category-8', 47);
+INSERT INTO public.bestseller_product VALUES ('product-24', 'category-8', 46);
+INSERT INTO public.bestseller_product VALUES ('product-84', 'category-8', 44);
+INSERT INTO public.bestseller_product VALUES ('product-126', 'category-8', 44);
+INSERT INTO public.bestseller_product VALUES ('product-191', 'category-8', 44);
+INSERT INTO public.bestseller_product VALUES ('product-2', 'category-8', 41);
+INSERT INTO public.bestseller_product VALUES ('product-67', 'category-15', 53);
+INSERT INTO public.bestseller_product VALUES ('product-111', 'category-15', 53);
+INSERT INTO public.bestseller_product VALUES ('product-76', 'category-15', 51);
+INSERT INTO public.bestseller_product VALUES ('product-51', 'category-15', 51);
+INSERT INTO public.bestseller_product VALUES ('product-87', 'category-15', 47);
+INSERT INTO public.bestseller_product VALUES ('product-269', 'category-15', 34);
+INSERT INTO public.bestseller_product VALUES ('product-372', 'category-15', 34);
+INSERT INTO public.bestseller_product VALUES ('product-397', 'category-15', 33);
+INSERT INTO public.bestseller_product VALUES ('product-317', 'category-15', 31);
+INSERT INTO public.bestseller_product VALUES ('product-382', 'category-15', 28);
+INSERT INTO public.bestseller_product VALUES ('product-170', 'category-2', 65);
+INSERT INTO public.bestseller_product VALUES ('product-83', 'category-2', 62);
+INSERT INTO public.bestseller_product VALUES ('product-20', 'category-2', 53);
+INSERT INTO public.bestseller_product VALUES ('product-136', 'category-2', 52);
+INSERT INTO public.bestseller_product VALUES ('product-173', 'category-2', 52);
+INSERT INTO public.bestseller_product VALUES ('product-135', 'category-2', 51);
+INSERT INTO public.bestseller_product VALUES ('product-100', 'category-2', 50);
+INSERT INTO public.bestseller_product VALUES ('product-27', 'category-2', 50);
+INSERT INTO public.bestseller_product VALUES ('product-15', 'category-2', 49);
+INSERT INTO public.bestseller_product VALUES ('product-185', 'category-2', 48);
+INSERT INTO public.bestseller_product VALUES ('product-71', 'category-17', 53);
+INSERT INTO public.bestseller_product VALUES ('product-82', 'category-17', 46);
+INSERT INTO public.bestseller_product VALUES ('product-117', 'category-17', 45);
+INSERT INTO public.bestseller_product VALUES ('product-378', 'category-17', 35);
+INSERT INTO public.bestseller_product VALUES ('product-242', 'category-17', 32);
+INSERT INTO public.bestseller_product VALUES ('product-309', 'category-17', 30);
+INSERT INTO public.bestseller_product VALUES ('product-383', 'category-17', 29);
+INSERT INTO public.bestseller_product VALUES ('product-274', 'category-17', 29);
+INSERT INTO public.bestseller_product VALUES ('product-572', 'category-17', 28);
+INSERT INTO public.bestseller_product VALUES ('product-202', 'category-17', 28);
+INSERT INTO public.bestseller_product VALUES ('product-188', 'category-13', 60);
+INSERT INTO public.bestseller_product VALUES ('product-146', 'category-13', 55);
+INSERT INTO public.bestseller_product VALUES ('product-103', 'category-13', 51);
+INSERT INTO public.bestseller_product VALUES ('product-21', 'category-13', 48);
+INSERT INTO public.bestseller_product VALUES ('product-33', 'category-13', 46);
+INSERT INTO public.bestseller_product VALUES ('product-167', 'category-13', 45);
+INSERT INTO public.bestseller_product VALUES ('product-114', 'category-13', 41);
+INSERT INTO public.bestseller_product VALUES ('product-339', 'category-13', 35);
+INSERT INTO public.bestseller_product VALUES ('product-203', 'category-13', 35);
+INSERT INTO public.bestseller_product VALUES ('product-284', 'category-13', 27);
+INSERT INTO public.bestseller_product VALUES ('product-11', 'category-5', 60);
+INSERT INTO public.bestseller_product VALUES ('product-93', 'category-5', 58);
+INSERT INTO public.bestseller_product VALUES ('product-112', 'category-5', 55);
+INSERT INTO public.bestseller_product VALUES ('product-68', 'category-5', 51);
+INSERT INTO public.bestseller_product VALUES ('product-157', 'category-5', 49);
+INSERT INTO public.bestseller_product VALUES ('product-151', 'category-5', 48);
+INSERT INTO public.bestseller_product VALUES ('product-94', 'category-5', 47);
+INSERT INTO public.bestseller_product VALUES ('product-18', 'category-5', 47);
+INSERT INTO public.bestseller_product VALUES ('product-183', 'category-5', 47);
+INSERT INTO public.bestseller_product VALUES ('product-28', 'category-5', 45);
+INSERT INTO public.bestseller_product VALUES ('product-52', 'category-19', 60);
+INSERT INTO public.bestseller_product VALUES ('product-137', 'category-19', 55);
+INSERT INTO public.bestseller_product VALUES ('product-107', 'category-19', 53);
+INSERT INTO public.bestseller_product VALUES ('product-154', 'category-19', 52);
+INSERT INTO public.bestseller_product VALUES ('product-139', 'category-19', 43);
+INSERT INTO public.bestseller_product VALUES ('product-69', 'category-19', 41);
+INSERT INTO public.bestseller_product VALUES ('product-229', 'category-19', 39);
+INSERT INTO public.bestseller_product VALUES ('product-333', 'category-19', 36);
+INSERT INTO public.bestseller_product VALUES ('product-294', 'category-19', 33);
+INSERT INTO public.bestseller_product VALUES ('product-377', 'category-19', 30);
+INSERT INTO public.bestseller_product VALUES ('product-178', 'category-10', 56);
+INSERT INTO public.bestseller_product VALUES ('product-61', 'category-10', 55);
+INSERT INTO public.bestseller_product VALUES ('product-184', 'category-10', 55);
+INSERT INTO public.bestseller_product VALUES ('product-179', 'category-10', 51);
+INSERT INTO public.bestseller_product VALUES ('product-143', 'category-10', 51);
+INSERT INTO public.bestseller_product VALUES ('product-118', 'category-10', 48);
+INSERT INTO public.bestseller_product VALUES ('product-12', 'category-10', 46);
+INSERT INTO public.bestseller_product VALUES ('product-89', 'category-10', 46);
+INSERT INTO public.bestseller_product VALUES ('product-9', 'category-10', 43);
+INSERT INTO public.bestseller_product VALUES ('product-73', 'category-10', 42);
+INSERT INTO public.bestseller_product VALUES ('product-182', 'category-18', 58);
+INSERT INTO public.bestseller_product VALUES ('product-44', 'category-18', 56);
+INSERT INTO public.bestseller_product VALUES ('product-37', 'category-18', 51);
+INSERT INTO public.bestseller_product VALUES ('product-194', 'category-18', 49);
+INSERT INTO public.bestseller_product VALUES ('product-341', 'category-18', 42);
+INSERT INTO public.bestseller_product VALUES ('product-181', 'category-18', 36);
+INSERT INTO public.bestseller_product VALUES ('product-363', 'category-18', 33);
+INSERT INTO public.bestseller_product VALUES ('product-238', 'category-18', 31);
+INSERT INTO public.bestseller_product VALUES ('product-201', 'category-18', 27);
+INSERT INTO public.bestseller_product VALUES ('product-212', 'category-18', 26);
+INSERT INTO public.bestseller_product VALUES ('product-323', 'category-18', 26);
+INSERT INTO public.bestseller_product VALUES ('product-129', 'category-6', 57);
+INSERT INTO public.bestseller_product VALUES ('product-66', 'category-16', 60);
+INSERT INTO public.bestseller_product VALUES ('product-198', 'category-6', 56);
+INSERT INTO public.bestseller_product VALUES ('product-31', 'category-16', 55);
+INSERT INTO public.bestseller_product VALUES ('product-59', 'category-16', 53);
+INSERT INTO public.bestseller_product VALUES ('product-166', 'category-16', 50);
+INSERT INTO public.bestseller_product VALUES ('product-121', 'category-16', 45);
+INSERT INTO public.bestseller_product VALUES ('product-141', 'category-16', 44);
+INSERT INTO public.bestseller_product VALUES ('product-19', 'category-16', 44);
+INSERT INTO public.bestseller_product VALUES ('product-164', 'category-16', 40);
+INSERT INTO public.bestseller_product VALUES ('product-254', 'category-16', 31);
+INSERT INTO public.bestseller_product VALUES ('product-327', 'category-16', 30);
+INSERT INTO public.bestseller_product VALUES ('product-251', 'category-16', 30);
+INSERT INTO public.bestseller_product VALUES ('product-144', 'category-6', 51);
+INSERT INTO public.bestseller_product VALUES ('product-108', 'category-6', 51);
+INSERT INTO public.bestseller_product VALUES ('product-4', 'category-6', 50);
+INSERT INTO public.bestseller_product VALUES ('product-256', 'category-6', 32);
+INSERT INTO public.bestseller_product VALUES ('product-296', 'category-6', 31);
+INSERT INTO public.bestseller_product VALUES ('product-246', 'category-6', 27);
+INSERT INTO public.bestseller_product VALUES ('product-362', 'category-6', 27);
+INSERT INTO public.bestseller_product VALUES ('product-264', 'category-6', 26);
+INSERT INTO public.bestseller_product VALUES ('product-394', 'category-6', 26);
+INSERT INTO public.bestseller_product VALUES ('product-116', 'category-4', 57);
+INSERT INTO public.bestseller_product VALUES ('product-36', 'category-4', 55);
+INSERT INTO public.bestseller_product VALUES ('product-34', 'category-4', 55);
+INSERT INTO public.bestseller_product VALUES ('product-75', 'category-4', 52);
+INSERT INTO public.bestseller_product VALUES ('product-120', 'category-4', 52);
+INSERT INTO public.bestseller_product VALUES ('product-56', 'category-4', 51);
+INSERT INTO public.bestseller_product VALUES ('product-25', 'category-4', 48);
+INSERT INTO public.bestseller_product VALUES ('product-130', 'category-4', 48);
+INSERT INTO public.bestseller_product VALUES ('product-150', 'category-4', 48);
+INSERT INTO public.bestseller_product VALUES ('product-54', 'category-4', 48);
+INSERT INTO public.bestseller_product VALUES ('product-199', 'category-14', 56);
+INSERT INTO public.bestseller_product VALUES ('product-133', 'category-14', 52);
+INSERT INTO public.bestseller_product VALUES ('product-98', 'category-14', 52);
+INSERT INTO public.bestseller_product VALUES ('product-38', 'category-14', 49);
+INSERT INTO public.bestseller_product VALUES ('product-29', 'category-14', 49);
+INSERT INTO public.bestseller_product VALUES ('product-124', 'category-14', 46);
+INSERT INTO public.bestseller_product VALUES ('product-86', 'category-14', 46);
+INSERT INTO public.bestseller_product VALUES ('product-177', 'category-14', 44);
+INSERT INTO public.bestseller_product VALUES ('product-277', 'category-14', 36);
+INSERT INTO public.bestseller_product VALUES ('product-314', 'category-14', 32);
+INSERT INTO public.bestseller_product VALUES ('product-39', 'category-20', 59);
+INSERT INTO public.bestseller_product VALUES ('product-26', 'category-20', 54);
+INSERT INTO public.bestseller_product VALUES ('product-7', 'category-20', 50);
+INSERT INTO public.bestseller_product VALUES ('product-193', 'category-20', 50);
+INSERT INTO public.bestseller_product VALUES ('product-1', 'category-20', 47);
+INSERT INTO public.bestseller_product VALUES ('product-14', 'category-20', 44);
+INSERT INTO public.bestseller_product VALUES ('product-43', 'category-20', 42);
+INSERT INTO public.bestseller_product VALUES ('product-106', 'category-20', 42);
+INSERT INTO public.bestseller_product VALUES ('product-366', 'category-20', 39);
+INSERT INTO public.bestseller_product VALUES ('product-131', 'category-20', 39);
+INSERT INTO public.bestseller_product VALUES ('product-48', 'category-7', 62);
+INSERT INTO public.bestseller_product VALUES ('product-16', 'category-7', 54);
+INSERT INTO public.bestseller_product VALUES ('product-88', 'category-7', 53);
+INSERT INTO public.bestseller_product VALUES ('product-169', 'category-7', 50);
+INSERT INTO public.bestseller_product VALUES ('product-113', 'category-7', 50);
+INSERT INTO public.bestseller_product VALUES ('product-104', 'category-7', 48);
+INSERT INTO public.bestseller_product VALUES ('product-81', 'category-7', 47);
+INSERT INTO public.bestseller_product VALUES ('product-163', 'category-7', 41);
+INSERT INTO public.bestseller_product VALUES ('product-97', 'category-7', 39);
+INSERT INTO public.bestseller_product VALUES ('product-156', 'category-7', 38);
+INSERT INTO public.bestseller_product VALUES ('product-243', 'category-7', 38);
+INSERT INTO public.bestseller_product VALUES ('product-134', 'category-12', 53);
+INSERT INTO public.bestseller_product VALUES ('product-62', 'category-12', 52);
+INSERT INTO public.bestseller_product VALUES ('product-109', 'category-12', 46);
+INSERT INTO public.bestseller_product VALUES ('product-91', 'category-12', 45);
+INSERT INTO public.bestseller_product VALUES ('product-261', 'category-12', 35);
+INSERT INTO public.bestseller_product VALUES ('product-241', 'category-12', 33);
+INSERT INTO public.bestseller_product VALUES ('product-353', 'category-12', 33);
+INSERT INTO public.bestseller_product VALUES ('product-302', 'category-12', 31);
+INSERT INTO public.bestseller_product VALUES ('product-273', 'category-12', 28);
+INSERT INTO public.bestseller_product VALUES ('product-271', 'category-12', 28);
+
+
+-- Completed on 2021-04-04 15:18:42 +03
+
+--
+-- PostgreSQL database dump complete
+--
+
